@@ -7,13 +7,14 @@ public class BackwardsString implements TextFunkifier {
     public BackwardsString(String unfunkifiedText) {
 
         this.unfunkifiedText = unfunkifiedText;
-
     }
 
     @Override
     public String funkifyText() {
-
-        return null;
-
+    	String ans = "";
+        for (int i = unfunkifiedText.length()-1; i >= 0; i--) {
+        	ans += unfunkifiedText.charAt(i);
+        }
+        return ans;
     }
 }

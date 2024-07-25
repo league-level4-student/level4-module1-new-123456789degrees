@@ -44,6 +44,7 @@ public class TextFunkifierTest {
 
     @Test
     public void testCustomString() {
-
+    	Funky f = new Funky("My custom test");
+    	assertEquals("M.y. .c.u.s.t.o.m. .t.e.s.t.", f.funkifyText());
     }
 }

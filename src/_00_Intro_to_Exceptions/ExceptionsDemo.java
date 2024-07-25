@@ -19,23 +19,6 @@ public class ExceptionsDemo {
         if (x < 5) {
             // This is where the Exception is actually thrown.
             throw new Exception();
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		//sign out of github next time or else
-		
         }
     }
 
@@ -59,7 +42,7 @@ public class ExceptionsDemo {
 
         // 1. Create a try/catch block (Hint: type "try" and ctrl + space).
     	try {
-			testFiveOrGreater(1);
+			testFiveOrGreater(4);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -76,11 +59,13 @@ public class ExceptionsDemo {
 
         // 4. Run the program. Did the stack trace print out?
     	try {
-    		testPositive(-5);
+    		testPositive(-1);
     	} catch (NegativeNumberException e) {
     		e.scaryPopup();
     		e.printStackTrace();
-    	}
+    	} finally {
+			JOptionPane.showMessageDialog(null, "Your computer is fine");
+		}
     }
 
     /*

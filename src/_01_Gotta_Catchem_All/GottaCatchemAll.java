@@ -38,7 +38,7 @@ class GottaCatchemAll {
 
             rob.setSpeed(100);
             rob.penDown();
-
+            rob = null;
             for (int i = 0; i < 4; i++) {
                 rob.move(90);
                 rob.turn(90);
@@ -63,7 +63,7 @@ class GottaCatchemAll {
 
         try {
 
-            for (int i = 0; i < intArray.length; i++) {
+            for (int i = 0; i <= intArray.length; i++) {
                 System.out.println(intArray[i]);
             }
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -82,7 +82,7 @@ class GottaCatchemAll {
     public void testNumberFormatException() {
 
         try {
-            int answer = Integer.parseInt("42");
+            int answer = Integer.parseInt("42.0");
 
             System.out.println(
                     "The answer to life, the universe and everything is... "
@@ -109,6 +109,7 @@ class GottaCatchemAll {
             Random rand = new Random();
             int dividend = rand.nextInt(9900) + 100;
             int divisor = rand.nextInt(5400) + 100;
+            divisor = 0;
             int quotient = dividend / divisor;
 
             System.out.println("The result of " + dividend + " divided by "

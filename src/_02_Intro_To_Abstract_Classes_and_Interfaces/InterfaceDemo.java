@@ -26,7 +26,7 @@ public interface InterfaceDemo {
      * is that they may contain them if they have both the static and final
      * keywords.
      */
-    public static final int num = 2;
+    public static final int num2 = 2;
 
     /*
      * Similarly, the abstract keyword is not used for abstract methods in
