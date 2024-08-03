@@ -16,7 +16,10 @@ abstract class Animal {
 
 class Dog extends Animal {
     public void speak() {
-        System.out.println("Woof!");
+       	System.out.println("Woof!");
+    }
+    public void eat() {
+    	System.out.println("I am chewing a bone!");
     }
 }
 
@@ -46,7 +49,7 @@ public class PolymorphismDemo {
          * declared as an Animal on the left side.
          */
 
-        Animal animal = new Animal();
+        Dog animal = new Dog();
 
         /*
          * 2. Call the speak method and run the program.
@@ -54,7 +57,7 @@ public class PolymorphismDemo {
          * Even though the variable was declared as an Animal, at run time it
          * will behave like whatever Animal subclass it was instantiated as.
          */
-
+        animal.speak();
         /*
          * 3. Comment out the speak method of the Animal subclass you chose and
          * run the program again.
@@ -63,14 +66,14 @@ public class PolymorphismDemo {
          * chose, the next closest speak method in the class's inheritance was
          * called. In this case it was Animal class's version of speak.
          */
-
+        animal.eat();
         /*
          * 4. Add another method called eat to the Animal subclass you chose and
          * have it print a description of the animal eating their favorite food
          * to the console.
          * 
          * 5. Try to call your new eat method using the animal variable.
-         * 
+         *
          * You'll notice that it won't show up in the list of available options
          * because animal is still considered an Animal at compile time.
          * 
