@@ -1,8 +1,8 @@
 package _06_Hospital;
 
 public class Patient {
-	boolean cared = false;
-	public Boolean feelsCaredFor() {
+	private boolean cared = false;
+	public boolean feelsCaredFor() {
 		// TODO Auto-generated method stub
 		return cared;
 	}
